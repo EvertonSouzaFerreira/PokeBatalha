@@ -525,19 +525,19 @@ button:hover{
         height: 100%;
     }
 /* ajustar o box_face--back,  */
-    /* .box{
-        --width: 300px;
-        --height: 500px;
+    .box{
+        --width: 250px;
+        --height: 380px;
         --depth: 3vmin;
 
-    } */
+    }
     /* .container{
         
         background-color: #69BC64;
     } */
     #root{
         width: 100%;
-        padding-top: 1rem;
+        padding-top: .5rem;
     }
     /* .front-face{
         transform: rotateZ(100deg);
