@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import {PokedexProvaider} from './PokedexContexto'
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
+//Global-Style
+import GlobalStyle from './globalStyles';
+
+//Componentes
+import Header from './Components/Header/Header';
+import PokemonCard from './Components/PokemonCard/PokemonCard';
+import PokemonDetalhes from './Pages/PokemonDetailPage/PokemonDetalhes';
+import PokedexPage from './Pages/PokedexPage/PokedexPage';
+import TelaDeBatalha from './Components/TelaBatalha/TelaDeBatalha';
+import AparelhoPokedex from './Components/AparelhoPokedex/AparelhoPokedex';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PokedexProvaider>
+        <GlobalStyle/>
+        
+       
+        
+        <AparelhoPokedex/>
+        
+        
+        
+    </PokedexProvaider>
+    
   );
 }
 
 export default App;
+
+
+//fazendo a barra mover suavimente
